@@ -1,7 +1,4 @@
 <?php
-spl_autoload_register(function ($class) {
-    require_once($class . '.php');
-});
 
 require_once 'utils.php';
 
@@ -11,7 +8,9 @@ use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\RequestException;
 use Ouzo\Utilities\Clock;
 
-const DEFAULT_JOB_STATUS_SLEEP = 2;
+if (!defined('DEFAULT_JOB_STATUS_SLEEP')) {
+    define("DEFAULT_JOB_STATUS_SLEEP", 2);
+}
 const default_options = array(
     'optional_callback' => '',
     'return_job_status' => false,
