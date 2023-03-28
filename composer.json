@@ -1,5 +1,5 @@
 {
-	"name" : "smile-identity/smile-identity-core",
+	"name" : "monthly-ng/smile-identity-core-php",
 	"type" : "library",
 	"description" : "The Official Smile Identity PHP library",
 	"homepage" : "https://github.com/smileidentity/smile-identity-core-php",
@@ -25,5 +25,7 @@
 		"psr-0" : {
 			"" : "lib/"
 		}
-	}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }
